@@ -1,0 +1,19 @@
+.botao{
+    
+      width:324px;
+      margin-left: 40px;
+      margin: 3px;
+  }
+  .submenu{
+    
+    width:300px;
+    /* margin-left: 30px; */
+    /* padding-left: 50px; */
+    float: right;
+    margin: 2px;
+    margin-right: 4px;
+    background-color: #8A67D4;
+    color: #FFFFFF;
+    font:bold;
+
+  }

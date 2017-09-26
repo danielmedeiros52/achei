@@ -7,11 +7,13 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MdButtonModule,MdCardModule,MdMenuModule,MdToolbarModule,MdIconModule} from '@angular/material';
 import {CabecalhoComponent} from './cabecalho/cabecalho.component';
 import {MenuLateralComponent} from './menu-lateral/menu-lateral.component';
+import { CadastroComponent } from './cadastro/cadastro.component';
 @NgModule({
   declarations: [
     AppComponent,
     CabecalhoComponent,
-    MenuLateralComponent
+    MenuLateralComponent,
+    CadastroComponent
   ],
   imports: [
     BrowserModule,

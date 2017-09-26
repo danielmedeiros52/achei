@@ -1,0 +1,22 @@
+.menu{
+    
+    margin: 0;
+    padding: 0;
+    width: 330px;
+    height: 894px;
+    color: lightgray;
+    box-shadow: 3px 0px 3px 0px rgba(0,0,0,0.12);
+}
+
+.botao{
+  
+    width:300px;
+    margin-left: 40px;
+    margin: 5px;
+}
+.tituloMenu{
+    width: 99%;
+height: 50px;
+    background-color:#483D8B;
+font-size: 50px;
+}

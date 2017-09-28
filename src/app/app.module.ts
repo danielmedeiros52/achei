@@ -8,12 +8,15 @@ import {MdButtonModule,MdCardModule,MdMenuModule,MdToolbarModule,MdIconModule} f
 import {CabecalhoComponent} from './cabecalho/cabecalho.component';
 import {MenuLateralComponent} from './menu-lateral/menu-lateral.component';
 import { CadastroComponent } from './cadastro/cadastro.component';
+import { InicioComponent } from './inicio/inicio.component';
+
 @NgModule({
   declarations: [
     AppComponent,
     CabecalhoComponent,
     MenuLateralComponent,
-    CadastroComponent
+    CadastroComponent,
+    InicioComponent
   ],
   imports: [
     BrowserModule,

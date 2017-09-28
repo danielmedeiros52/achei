@@ -1,5 +1,7 @@
 .menu{
-    
+     background:#E6E3E3; 
+    float:left; 
+    border:1px solid #FFF;
     margin: 0px;
     padding: 0;
     width: 330px;

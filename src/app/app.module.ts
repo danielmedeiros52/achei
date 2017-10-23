@@ -9,6 +9,9 @@ import {CabecalhoComponent} from './cabecalho/cabecalho.component';
 import {MenuLateralComponent} from './menu-lateral/menu-lateral.component';
 import { CadastroComponent } from './cadastro/cadastro.component';
 import { InicioComponent } from './inicio/inicio.component';
+import { LoginComponent } from './login/login.component';
+import {MatInputModule} from '@angular/material';
+import {MatExpansionModule} from '@angular/material';
 
 @NgModule({
   declarations: [
@@ -16,7 +19,8 @@ import { InicioComponent } from './inicio/inicio.component';
     CabecalhoComponent,
     MenuLateralComponent,
     CadastroComponent,
-    InicioComponent
+    InicioComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
@@ -25,7 +29,9 @@ import { InicioComponent } from './inicio/inicio.component';
     MdCardModule,
     MdMenuModule,
     MdToolbarModule,
-    MdIconModule
+    MdIconModule,
+    MatInputModule,
+    MatExpansionModule
   ],
   providers: [],
   bootstrap: [AppComponent]

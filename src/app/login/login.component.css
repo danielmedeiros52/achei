@@ -9,7 +9,8 @@
     -ms-transform: translate(-50%, -50%);
 }
 .loginBox{
-
+    
+    background-color: #fff;
     position: relative;
     top: 0;
     opacity: 1;
@@ -21,7 +22,7 @@
     -webkit-transform: scale(1);
     -ms-transform: scale(1);
     z-index: 5;
-    box-shadow: 3px 3px 3px 4px rgba(1,1,1,0.10);
+    box-shadow: 4px 4px 4px 5px rgba(1,1,1,0.70);
 }
 .botao{
     width: 100%;
@@ -36,6 +37,7 @@
     text-align: center;
     color: rgba(0, 0, 0, 0.4);
     font-size: 18px;
+    text-decoration:none; 
 }
 .cadastrese{
     width: 100%;

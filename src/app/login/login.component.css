@@ -27,13 +27,20 @@
 .botao{
     width: 100%;
 }
+.botaoEntrar{
+font: bold;
+font-size: 18px;
+float: none;
+text-align: center;
+}
 .campos{
     padding:10px; 
 }
 .esqSenha{
     width: 100%;
     padding-top: 10px;
-    float: left;
+    margin-bottom: 10px;
+    float: right;
     text-align: center;
     color: rgba(0, 0, 0, 0.4);
     font-size: 18px;
@@ -42,6 +49,7 @@
 .cadastrese{
     width: 100%;
     margin-top:10px; 
+    margin-bottom:10px; 
 background-color:rgb(211, 207, 243)
 }
 

@@ -1,3 +1,5 @@
+import { routing } from './app.routing';
+import { RouterModule } from '@angular/router';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -12,7 +14,7 @@ import { InicioComponent } from './inicio/inicio.component';
 import { LoginComponent } from './login/login.component';
 import {MatInputModule} from '@angular/material';
 import {MatExpansionModule} from '@angular/material';
-
+import { UsuarioComponent } from './cadastro/usuario/usuario.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,7 +22,9 @@ import {MatExpansionModule} from '@angular/material';
     MenuLateralComponent,
     CadastroComponent,
     InicioComponent,
-    LoginComponent
+    LoginComponent,
+    UsuarioComponent,
+
   ],
   imports: [
     BrowserModule,
@@ -31,7 +35,8 @@ import {MatExpansionModule} from '@angular/material';
     MdToolbarModule,
     MdIconModule,
     MatInputModule,
-    MatExpansionModule
+    MatExpansionModule,
+    routing
   ],
   providers: [],
   bootstrap: [AppComponent]

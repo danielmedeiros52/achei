@@ -1,5 +1,5 @@
+import { MenuLateralComponent } from './../menu-lateral/menu-lateral.component';
 import { Component, OnInit } from '@angular/core';
-
 @Component({
   selector: 'app-inicio',
   templateUrl: './inicio.component.html',

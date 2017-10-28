@@ -1,9 +1,12 @@
+import { AuthGuard } from './guards/authGguard';
+
 import { routing } from './app.routing';
 import { RouterModule } from '@angular/router';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 
-
+import { AuthService } from './cadastro/usuario/auth.service';
 import { AppComponent } from './app.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MdButtonModule,MdCardModule,MdMenuModule,MdToolbarModule,MdIconModule} from '@angular/material';
@@ -36,9 +39,10 @@ import { UsuarioComponent } from './cadastro/usuario/usuario.component';
     MdIconModule,
     MatInputModule,
     MatExpansionModule,
-    routing
+    routing,
+    FormsModule
   ],
-  providers: [],
+  providers: [AuthService,AuthGuard],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -11,18 +11,18 @@
   <div class='loginBox'>
     
     
-    <form>
+   
       <md-form-field class="campos">
-        <input mdInput placeholder="Login">
+        <input ngModel [(ngModel)]="usuario.nome" mdInput placeholder="Login">
       </md-form-field>
       <md-form-field class="campos">
-        <input mdInput placeholder="senha" type="password">
+        <input mdInput [(ngModel)]="usuario.senha"  placeholder="senha" type="password">
       </md-form-field>
-      <button md-raised-button color="primary" routerLink="home" class='botao'>
-        <span class="botaoEntrar">Entrar</span>
+      <button md-raised-button color="primary" type="submit" (click)="fazerLogin()" class='botao'>
+                <span class="botaoEntrar"  >Entrar</span>
       </button>
-      
-    </form>
+    
+  
     
         <md-expansion-panel class="cadastrese" >
           <md-expansion-panel-header >
@@ -43,7 +43,7 @@
         <div>
           <span>
             
-            <a class="esqSenha"> Esqueceu a senha? </a>
+            <a class="esqSenha" > Esqueceu a senha? </a>
             
             
           </span>

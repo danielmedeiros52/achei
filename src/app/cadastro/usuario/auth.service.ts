@@ -10,14 +10,14 @@ export class AuthService {
   private usuarioAutenticado: boolean = false;
   fazerLogin(usuario: Usuario) {
 
-    if (usuario.nome === 'daniel' &&
+    if (usuario.nome === 'achei' &&
       usuario.senha === '123') {
       this.usuarioAutenticado = true
       this.router.navigate(['home'])
     } else {
 
       this.usuarioAutenticado = false
-      alert("Login Falhou!")
+      alert("Login: achei senha:123")
     };
   }
 

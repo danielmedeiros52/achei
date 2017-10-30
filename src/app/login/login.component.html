@@ -12,31 +12,31 @@
     
     
    
-      <md-form-field class="campos">
-        <input ngModel [(ngModel)]="usuario.nome" mdInput placeholder="Login">
-      </md-form-field>
-      <md-form-field class="campos">
-        <input mdInput [(ngModel)]="usuario.senha"  placeholder="senha" type="password">
-      </md-form-field>
-      <button md-raised-button color="primary" type="submit" (click)="fazerLogin()" class='botao'>
+      <mat-form-field class="campos">
+        <input ngModel [(ngModel)]="usuario.nome" matInput placeholder="Login">
+      </mat-form-field>
+      <mat-form-field class="campos">
+        <input matInput [(ngModel)]="usuario.senha"  placeholder="senha" type="password">
+      </mat-form-field>
+      <button mat-raised-button color="primary" type="submit" (click)="fazerLogin()" class='botao'>
                 <span class="botaoEntrar"  >Entrar</span>
       </button>
     
   
     
-        <md-expansion-panel class="cadastrese" >
-          <md-expansion-panel-header >
-            <md-panel-title  class="esqSenha" >
+        <mat-expansion-panel class="cadastrese" >
+          <mat-expansion-panel-header >
+            <mat-panel-title  class="esqSenha" >
              <span class="esqSenha" >
                Cadastre-se
              </span>
-            </md-panel-title>
-          </md-expansion-panel-header>
+            </mat-panel-title>
+          </mat-expansion-panel-header>
               <svg style="width:24px;height:24px" viewBox="0 0 24 24">
                   <path fill="#000000" d="M5,3H19A2,2 0 0,1 21,5V19A2,2 0 0,1 19,21H5A2,2 0 0,1 3,19V5A2,2 0 0,1 5,3M18,5H15.5A3.5,3.5 0 0,0 12,8.5V11H10V14H12V21H15V14H18V11H15V9A1,1 0 0,1 16,8H18V5Z" />
               </svg>
              <span>entrar com facebook</span>
-        </md-expansion-panel>
+        </mat-expansion-panel>
 
     
 

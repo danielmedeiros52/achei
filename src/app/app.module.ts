@@ -21,7 +21,7 @@ import { UsuarioComponent } from './cadastro/usuario/usuario.component';
 @NgModule({
   declarations: [
     AppComponent,
-    CabecalhoComponent,
+    CabecalhoComponent   ,
     MenuLateralComponent,
     CadastroComponent,
     InicioComponent,

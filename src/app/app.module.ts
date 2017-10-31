@@ -18,6 +18,7 @@ import { CadastroComponent } from './cadastro/cadastro.component';
 import { InicioComponent } from './inicio/inicio.component';
 import { LoginComponent } from './login/login.component';
 import { UsuarioComponent } from './cadastro/usuario/usuario.component';
+import { AchadosPerdidosComponent } from './achados-perdidos/achados-perdidos.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -27,6 +28,7 @@ import { UsuarioComponent } from './cadastro/usuario/usuario.component';
     InicioComponent,
     LoginComponent,
     UsuarioComponent,
+    AchadosPerdidosComponent,
 
   ],
   imports: [

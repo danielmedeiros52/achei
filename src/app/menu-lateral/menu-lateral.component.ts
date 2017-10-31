@@ -1,3 +1,4 @@
+import { Router } from '@angular/router';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,7 +8,25 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MenuLateralComponent implements OnInit {
 
-  constructor() { }
+
+
+private _achei:any
+  constructor(private router:Router) {}
+    
+    setAchei(achei){
+ if(achei){
+
+  this.router.navigate(['achei'])
+
+}else{
+  this.router.navigate(['perdi'])
+
+}
+
+
+
+
+   }
 
   ngOnInit() {
   }

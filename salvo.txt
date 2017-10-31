@@ -16,3 +16,5 @@
       <iframe src="https://www.youtube.com/embed/ng8Wivt52K0?controls=1&showinfo=0&rel=0&autoplay=1&loop=1&playlist=ng8Wivt52K0" frameborder="0" allowfullscreen></iframe>
     </div>
   </div>
+
+  https://github.com/loiane/angular-ngrx4-example

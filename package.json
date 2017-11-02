@@ -5,7 +5,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
+    "build": "ng build && node server.js",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
@@ -23,10 +23,16 @@
     "@angular/platform-browser": "^4.4.6",
     "@angular/platform-browser-dynamic": "^4.4.6",
     "@angular/router": "^4.4.6",
+    "axios": "^0.17.0",
+    "body-parser": "^1.18.2",
     "core-js": "^2.4.1",
+    "express": "^4.16.2",
     "mongodb": "^2.2.33",
+    "mongoose": "^4.12.6",
+    "morgan": "^1.9.0",
     "node-github": "0.0.3",
     "rxjs": "^5.5.2",
+    "serve-favicon": "^2.4.5",
     "zone.js": "^0.8.18"
   },
   "devDependencies": {

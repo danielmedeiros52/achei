@@ -17,6 +17,11 @@
     </div>
   </div>
 
+
+https://www.youtube.com/watch?v=eGDRf2C4rkQ
+
+
+
   https://github.com/loiane/angular-ngrx4-example
 
   https://github.com/didinj/mean-stack-crud-example

@@ -1,5 +1,5 @@
 import { Router } from '@angular/router';
-import { Usuario } from './../../classes/usuario';
+import { Usuario } from './../../class/usuario';
 import { Injectable } from '@angular/core';
 
 @Injectable()
@@ -8,6 +8,8 @@ export class AuthService {
   constructor(private router: Router) { }
 
   private usuarioAutenticado: boolean = false;
+  
+  
   fazerLogin(usuario: Usuario) {
 
     if (usuario.nome === 'achei' &&

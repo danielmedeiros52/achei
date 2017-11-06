@@ -1,3 +1,4 @@
+import { LoginService } from './services/login.service';
 import { AuthGuard } from './guards/authGguard';
 
 import { routing } from './app.routing';
@@ -44,7 +45,7 @@ import { AchadosPerdidosComponent } from './achados-perdidos/achados-perdidos.co
     routing,
     FormsModule
   ],
-  providers: [AuthService,AuthGuard],
+  providers: [AuthService,AuthGuard,LoginService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -3,9 +3,9 @@ var router = express.Router();
 var Usuario = require('../models/Usuario');
 
 router.get('/usuarios', function (req, res) {
-    Usuario.getAllUsuarios(function (err, Usuarios) {
+    Usuario.getAllUsuarios(function (err, usuarios) {
         if (err) throw err;
-        res.json(Usuarios);
+        res.json(usuarios);
 
     });
 

@@ -1,4 +1,4 @@
-import { Usuario } from './../classes/usuario';
+import { Usuario } from './../class/usuario';
 import { AuthService } from './../cadastro/usuario/auth.service';
 import { Component, OnInit } from '@angular/core';
 

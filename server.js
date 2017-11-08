@@ -12,7 +12,7 @@ const port = 3000;
 const router = require('./server/routes/routes');
 const config = "mongodb://localhost:27017/achei"
 
-
+// http://jasonwatmore.com/post/2016/09/29/angular-2-user-registration-and-login-example-tutorial
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));

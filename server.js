@@ -1,20 +1,22 @@
-var express = require('express');
-var bodyParser = require('body-parser');
-var mongoose = require('mongoose');
+'use strict';
+const express = require('express');
+const app = express();
 
-var app = express();
-var port = 3000;
-var router = require('./server/routes/routes');
-var config = "mongodb://localhost:27017/achei"
+//importacao das dependencias
+const bodyParser = require('body-parser');
+const mongoose = require('mongoose');
+const jwt = require('express-jwt');
+const jwks = require('jwks-rsa');
+const cors = require('cors');
+const port = 3000;
+const router = require('./server/routes/routes');
+const config = "mongodb://localhost:27017/achei"
 
 
-// app.get('/', function (req, res) {
-//     res.send("Hello from Daniel");
 
-// });
-
-app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));
+app.use(cors());
 app.use('/', router)
 app.listen(port, function () {
     console.log("serve is ruing");

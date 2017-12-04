@@ -2,7 +2,7 @@ var express = require('express');
 var router = express.Router();
 var Usuario = require('../models/Usuario');
 
-router.get('/usuarios', function (req, res) {
+router.get('/', function (req, res) {
     Usuario.getAllUsuarios(function (err, usuarios) {
         if (err) throw err;
         res.json(usuarios);
@@ -22,7 +22,7 @@ router.post('/', function (req, res) {
         endereco: req.body.endereco
     }
 
-    Usuario.addUsuarios(newUsuario, function (err, usuario) {
+    Usuario.addUsuario(newUsuario, function (err, usuario) {
         if (err) throw err;
         res.json(usuario);
 
@@ -39,7 +39,7 @@ router.put('/:_id', function (req, res) {
         RG: req.body.RG,
         endereco: req.body.endereco
     }
-    Usuario.updateUsuarios(req.params._id, update, function (err, usuario) {
+    Usuario.updateUsuario(req.params._id, update, function (err, usuario) {
         if (err) throw err;
         res.json(usuario);
 
@@ -47,7 +47,7 @@ router.put('/:_id', function (req, res) {
 
 })
 router.delete('/:_id', function (req, res) {
-    Usuario.deleteUsuarios(req.params._id,  function (err, usuario) {
+    Usuario.deleteUsuario(req.params._id,  function (err, usuario) {
         if (err) throw err;
         res.json(usuario);
 
@@ -55,7 +55,7 @@ router.delete('/:_id', function (req, res) {
 
 })
 router.get('/:_id', function (req, res) {
-    Usuario.getUsuarios(req.params._id, function (err, usuario) {
+    Usuario.getUsuario(req.params._id, function (err, usuario) {
         if (err) throw err;
         res.json(usuario);
 
